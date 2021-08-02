@@ -4,7 +4,8 @@
   "description": "Demonstrative backend, built with Express and MongoDB. Ready to deploy as a Docker container.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
