@@ -1,0 +1,45 @@
+{
+  "name": "demo-backend",
+  "version": "1.0.0",
+  "description": "Demonstrative backend, built with Express and MongoDB. Ready to deploy as a Docker container.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evert-arias/demo-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "docker"
+  ],
+  "author": "Evert Arias <evert@iotbits.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evert-arias/demo-backend/issues"
+  },
+  "homepage": "https://github.com/evert-arias/demo-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.3.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.3",
+    "slugify": "^1.5.3",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
