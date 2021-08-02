@@ -10,7 +10,7 @@ function connect(url) {
       useUnifiedTopology: true,
     })
     .then(() => {
-      console.log("Connected to the Database");
+      console.log("Connected to database");
     })
     .catch((error) => {
       console.error(`Error trying to connect to the DB: ${error}\nURL: ${url}`);
