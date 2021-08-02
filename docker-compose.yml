@@ -1,0 +1,23 @@
+version: "3.8"
+
+services: 
+  app:
+    container_name: demo-backend
+    restart: unless-stopped
+    build: .
+    ports: 
+      - "3000:3000"
+    depends_on: 
+      - mongo
+    network_mode: bridge  
+  
+  mongo:
+    container_name: mongo
+    restart: unless-stopped
+    image: mongo
+    environment:
+      - PUID=1000
+      - PGID=1000
+    ports: 
+      - "27017:27017"
+    network_mode: bridge    
