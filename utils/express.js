@@ -43,6 +43,10 @@ app.use(
 
 app.use("/api/v1/users", userRouter);
 
+app.get('/status', (req, res) => {
+  res.send(`The server is running healthy on port ${process.env.PORT}`)
+})
+
 app.all("*", (req, res, next) => {
   next(new AppError(`can´t find ${req.originalUrl} on this server`, 404));
 });
